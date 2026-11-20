@@ -8,12 +8,12 @@ One image that sums up the world news of **Thursday, November 19, 2026**, drawn 
 
 ## What's in the picture
 
-- **Trump, Xi & Putin meet in Shenzhen** — the first trilateral summit, with nuclear talks and Ukraine at the center.
-- **Anthropic debuts on Nasdaq** — ticker ANT; IPO priced at $83, $81.3B raised, the largest IPO ever.
-- **GTA VI launch day** — the 13-year wait ends; 99/100 reviews, 2.3M watching on Twitch.
+- **Trump, Xi & Putin end the Shenzhen summit** — a joint peace declaration on nuclear-risk talks and oil-output plans; no breakthrough, and Ukraine was not named.
+- **Anthropic's first day on Nasdaq** — ticker ANT; IPO priced at $83, opened at $111.50 (+34%), closed at $97.17 (+17%).
+- **GTA VI day one** — a streaming record: 7.9M peak concurrent viewers (3.31M on Twitch), 99/100 reviews, 125.47M hours watched in the first 24 hours.
 - **World Court rules on the Rohingya case** — the ICJ genocide ruling, Gambia v. Myanmar, at The Hague.
 - **Cyclone Akvan hits India** — 100,000+ evacuated in Odisha under a red alert.
-- Footer: COP31 climate talks in Antalya, the Crimean Bridge attacked again, gold at $3,740.
+- Footer: COP31 climate talks in Antalya, the Crimean Bridge attacked again, gold below $3,800.
 
 ## How it works
 

@@ -95,10 +95,14 @@ for cx, tag in [(138, "US"), (219, "RU"), (300, "CN")]:
 center("SHENZHEN, CHINA", 219, cy + 66, font(SANS, 22), fill=(52, 58, 66))
 
 lx = 560  # text centre for lead panel
-y = headline_lines(["TRUMP, XI & PUTIN", "MEET IN SHENZHEN"], lx, 306, 400, start=45)
-y = subline("FIRST TRILATERAL SUMMIT", lx, y + 8, 400, start=27, fill=RED)
-y = subline("NUCLEAR TALKS · UKRAINE", lx, y + 6, 400, start=25)
-subline("AT THE CENTER", lx, y + 4, 400, start=25)
+hf = fit("TRUMP, XI & PUTIN", SANS, 400, 45)
+center("TRUMP, XI & PUTIN", lx, 306, hf)
+y = 306 + hf.size + 6
+center("END THE SUMMIT", lx, y, hf)
+y += hf.size
+y = subline("JOINT PEACE DECLARATION", lx, y + 8, 400, start=27, fill=RED)
+y = subline("SHENZHEN · NUCLEAR-RISK TALKS", lx, y + 6, 400, start=25)
+subline("NO BREAKTHROUGH", lx, y + 4, 400, start=25)
 
 # ---------------------------------------------------------------- row 2
 panel(36, 528, 504, 748, (244, 231, 199))     # Anthropic (left)
@@ -111,8 +115,8 @@ pts = [(250, 606), (300, 588), (348, 596), (404, 562), (452, 548)]
 d.line(pts, fill=(22, 128, 57), width=7, joint="curve")
 d.polygon([(452, 548), (428, 550), (446, 568)], fill=(22, 128, 57))
 center("NASDAQ", 146, 626, font(SANS, 20), fill=(52, 58, 66))
-y = headline_lines(["ANTHROPIC DEBUTS", "ON NASDAQ TODAY"], 270, 646, 440, start=33)
-subline("IPO $83 · $81.3B RAISED · LARGEST EVER", 270, y + 2, 440, start=21)
+y = headline_lines(["ANTHROPIC'S FIRST DAY:", "$97.17"], 270, 646, 440, start=33)
+subline("IPO $83 · OPENED $111.50 (+34%) · CLOSED +17%", 270, y + 2, 440, start=21)
 
 # GTA VI: sun + palm + VI
 d.ellipse([838, 548, 922, 632], fill=(244, 164, 40))
@@ -128,9 +132,9 @@ for dx, droop in [(-58, 26), (-34, 12), (0, 6), (36, 12), (60, 28)]:
         pts.append((px, py))
     d.line(pts, fill=(46, 64, 48), width=6)
 center("VI", 610, 552, font(SERIF, 64), fill=(70, 40, 110))
-y = headline_lines(["GTA VI LAUNCH DAY"], 754, 646, 440, start=33)
-subline("13-YEAR WAIT ENDS · 99/100 REVIEWS", 754, y + 2, 440, start=21)
-subline("2.3M WATCHING ON TWITCH", 754, y + 28, 440, start=21)
+y = headline_lines(["GTA VI DAY ONE: 7.9M AT PEAK"], 754, 646, 440, start=33)
+y = subline("STREAMING RECORD · TWITCH 3.31M · 99/100 REVIEWS", 754, y + 2, 440, start=21)
+subline("125.47M HOURS WATCHED IN 24H", 754, y + 4, 440, start=21)
 
 # ---------------------------------------------------------------- row 3
 panel(36, 764, 504, 956, (226, 236, 219))     # ICJ (left)
@@ -160,8 +164,8 @@ subline("ODISHA · RED ALERT", 806, y + 32, 350, start=20)
 
 # ---------------------------------------------------------------- footer
 d.rectangle([0, 972, W, H], fill=INK)
-center("ALSO TODAY: COP31 CLIMATE TALKS IN ANTALYA · CRIMEAN BRIDGE ATTACKED AGAIN · GOLD $3,740",
-       W // 2, 986, fit("ALSO TODAY: COP31 CLIMATE TALKS IN ANTALYA · CRIMEAN BRIDGE ATTACKED AGAIN · GOLD $3,740",
+center("ALSO TODAY: COP31 CLIMATE TALKS IN ANTALYA · CRIMEAN BRIDGE ATTACKED AGAIN · GOLD BELOW $3,800",
+       W // 2, 986, fit("ALSO TODAY: COP31 CLIMATE TALKS IN ANTALYA · CRIMEAN BRIDGE ATTACKED AGAIN · GOLD BELOW $3,800",
                         SANS, 980, 24), fill=WHITE)
 
 out = Path(__file__).resolve().parent / "entry.png"
